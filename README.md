@@ -2,7 +2,7 @@
 
 This repo provides a simple, reproducible local development stack:
 
-- **PostgreSQL 17** – main relational database
+- **PostgreSQL 18** – main relational database
 - **Dragonfly** – Redis-compatible in-memory datastore
 - **pgAdmin 4** – web UI for PostgreSQL
 - **RedisInsight** – web UI for Dragonfly (Redis-compatible)
