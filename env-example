@@ -1,0 +1,31 @@
+# -----------------------------
+# PostgreSQL
+# -----------------------------
+POSTGRES_DB=portfolio_dev
+POSTGRES_USER=appuser
+POSTGRES_PASSWORD=pa55word321
+POSTGRES_PORT=5432
+
+# Optional convenience variable (not used directly by compose,
+# but handy for apps / tooling)
+DATABASE_URL=postgresql://appuser:pa55word321@localhost:5432/portfolio_dev
+
+# -----------------------------
+# Dragonfly (Redis-compatible)
+# -----------------------------
+DRAGONFLY_PORT=6379
+
+# Optional convenience variable
+REDIS_URL=redis://localhost:6379
+
+# -----------------------------
+# pgAdmin
+# -----------------------------
+PGADMIN_DEFAULT_EMAIL=john.brosan@gmail.com
+PGADMIN_DEFAULT_PASSWORD=pa55word321
+PGADMIN_PORT=5050
+
+# -----------------------------
+# RedisInsight
+# -----------------------------
+REDISINSIGHT_PORT=5540

@@ -14,10 +14,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-app_user}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-app_user} -d ${POSTGRES_DB:-app_dev}"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 10
+
 
   dragonfly:
     image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
